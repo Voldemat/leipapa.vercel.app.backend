@@ -1,6 +1,6 @@
 import uuid
 from django.db import models
-from phonenumber_field.modelfields import PhoneNumberField 
+from phonenumber_field.modelfields import PhoneNumberField
 
 from .choices import UserAuthorityChoices
 
@@ -23,7 +23,6 @@ class Address(BaseModel):
 class MajorityShareHolder(BaseModel):
     has_consolidate_financial_report = models.BooleanField()
     is_ultimate_shareholder = models.BooleanField(null=True)
-
 
 
 class Demand(BaseModel):
